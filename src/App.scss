@@ -1,0 +1,88 @@
+//////////>>>>>>>>>>//////////>>>>>>>>>> Header //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.navbar {
+  background-color: black;
+  color: white;
+  .navbar-expand-lg {
+    background-color: black;
+    color: white;
+  }
+  .nav-link{
+    color: white;
+    font-weight: 600;
+    &:hover{
+      color:aqua;
+    }
+  }
+  .navbar-toggler{
+    background-color: white;
+  }
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Home Page //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.home-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+}
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Forms Page //////////>>>>>>>>>>//////////>>>>>>>>>>
+.Forms-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+
+  .forms-top-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .forms-second-row{
+    box-shadow: 10px 10px 20px;
+  }
+  .form-col1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-col2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.register-user-sec{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .fw-italic{
+    font-weight: 400;
+  }
+  .row-register{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+//////////>>>>>>>>>>//////////>>>>>>>>>> Footer //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.footer-bg{
+  background-color: black;
+ h6{
+  color: white;
+ }
+ .footer-lower-sec{
+  background-color: rgb(31, 30, 30);
+  color: white;
+ }
+}
