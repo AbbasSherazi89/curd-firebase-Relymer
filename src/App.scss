@@ -7,14 +7,14 @@
     background-color: black;
     color: white;
   }
-  .nav-link{
+  .nav-link {
     color: white;
     font-weight: 600;
-    &:hover{
-      color:aqua;
+    &:hover {
+      color: aqua;
     }
   }
-  .navbar-toggler{
+  .navbar-toggler {
     background-color: white;
   }
 }
@@ -30,28 +30,28 @@
 }
 
 //////////>>>>>>>>>>//////////>>>>>>>>>> Forms Page //////////>>>>>>>>>>//////////>>>>>>>>>>
-.Forms-sec{
+.Forms-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 90vh;
 
-  .forms-top-row{
+  .forms-top-row {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
-  .forms-second-row{
+
+  .forms-second-row {
     box-shadow: 10px 10px 20px;
   }
-  .form-col1{
+  .form-col1 {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .form-col2{
+  .form-col2 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -59,30 +59,49 @@
   }
 }
 
-.register-user-sec{
+//////////>>>>>>>>>>//////////>>>>>>>>>> Users Page //////////>>>>>>>>>>//////////>>>>>>>>>>
+
+.register-user-sec {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  .fw-italic{
+  .fw-italic {
     font-weight: 400;
   }
-  .row-register{
+  .row-register {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 }
+
+//////////>>>>>>>>>>//////////>>>>>>>>>> Table Page //////////>>>>>>>>>>//////////>>>>>>>>>>
+.table-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  .table-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 //////////>>>>>>>>>>//////////>>>>>>>>>> Footer //////////>>>>>>>>>>//////////>>>>>>>>>>
 
-.footer-bg{
+.footer-bg {
   background-color: black;
- h6{
-  color: white;
- }
- .footer-lower-sec{
-  background-color: rgb(31, 30, 30);
-  color: white;
- }
+  h6 {
+    color: white;
+  }
+  .footer-lower-sec {
+    background-color: rgb(31, 30, 30);
+    color: white;
+  }
 }

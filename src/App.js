@@ -21,6 +21,7 @@ import Forms from "./Components/Elements/Forms";
 import LoginHome from "./Pages/LoginHome";
 import Forgot from "./Components/Elements/Forgot";
 import RegisteredUsers from "./Components/Elements/RegisteredUsers";
+import TablesData from "./Components/Elements/TablesData";
 function App() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -80,6 +81,7 @@ function App() {
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route index path="/home" element={<LoginHome />} />
+          <Route index path="/table" element={<TablesData />} />
           <Route index path="/users" element={<RegisteredUsers />} />
           <Route
             index
