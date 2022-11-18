@@ -27,6 +27,7 @@
   align-items: center;
   justify-content: center;
   height: 90vh;
+
 }
 
 //////////>>>>>>>>>>//////////>>>>>>>>>> Forms Page //////////>>>>>>>>>>//////////>>>>>>>>>>
@@ -59,6 +60,17 @@
   }
 }
 
+label progress {
+  width: 35px;
+}
+label img {
+  width: 70px;
+  height: 70px;
+}
+
+#input-file {
+  display: none !important;
+}
 //////////>>>>>>>>>>//////////>>>>>>>>>> Users Page //////////>>>>>>>>>>//////////>>>>>>>>>>
 
 .register-user-sec {
@@ -93,6 +105,12 @@
   }
 }
 
+
+.profile-row{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 //////////>>>>>>>>>>//////////>>>>>>>>>> Footer //////////>>>>>>>>>>//////////>>>>>>>>>>
 
 .footer-bg {

@@ -20,8 +20,8 @@ import Base from "./Components/Layout/Base";
 import Forms from "./Components/Elements/Forms";
 import LoginHome from "./Pages/LoginHome";
 import Forgot from "./Components/Elements/Forgot";
-import RegisteredUsers from "./Components/Elements/RegisteredUsers";
-import TablesData from "./Components/Elements/TablesData";
+import Profile from "./Pages/Profile";
+import Upload from "./Components/Elements/Upload";
 function App() {
   const navigate = useNavigate();
   const [email, setEmail] = useState("");
@@ -46,7 +46,7 @@ function App() {
     if (id === 2) {
       signInWithEmailAndPassword(authentication, email, password)
         .then((res) => {
-          navigate("/home");
+          navigate("/home/:id");
           sessionStorage.setItem("auth", res._tokenResponse.RefreshToken);
         })
         .catch((e) => {
@@ -79,12 +79,22 @@ function App() {
      
       <Base>
         <Routes>
+
           <Route index path="/" element={<Home />} />
-          <Route index path="/home" element={<LoginHome />} />
-          <Route index path="/table" element={<TablesData />} />
-          <Route index path="/users" element={<RegisteredUsers />} />
+          <Route path="/profile" element={<Profile />} />
+
+          <Route path="/home/:id" 
+          element={
+          <LoginHome 
+          setEmail={setEmail}
+          setPassword={setPassword}
+          title="Update" 
+          />
+        } 
+          />
+
           <Route
-            index
+            
             path="/register"
             element={
               <Forms

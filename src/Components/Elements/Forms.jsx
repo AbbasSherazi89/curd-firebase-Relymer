@@ -1,7 +1,10 @@
-import React from "react";
 import { Button, TextField } from "@mui/material";
 import { Link } from "react-router-dom";
+import Upload from "./Upload";
+
 const Forms = ({title, handleAction, setEmail, setPassword}) => {
+ 
+
   return (
     <>
       <section className="Forms-sec">
@@ -14,6 +17,7 @@ const Forms = ({title, handleAction, setEmail, setPassword}) => {
                 <img className="img-fluid" src="assets/signup.webp" alt="" />
             </div>
             <div className="col-md-5 form-col2">
+              <Upload/>
               <TextField
                 id="email"
                 type="email"
@@ -30,6 +34,7 @@ const Forms = ({title, handleAction, setEmail, setPassword}) => {
                 variant="outlined"
                 onChange={(e)=>setPassword(e.target.value)}
               /><br/>
+
               <Button variant="contained" onClick={handleAction}>{title}</Button>
               <p className="text-start">
                     <Link className="text-decoration-none" to="/forgot">
